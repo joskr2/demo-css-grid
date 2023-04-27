@@ -8,14 +8,10 @@
 
 .contenedor {
   display: grid;
+  grid-template-columns: 1fr clamp(200px, 50%, 300px) 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
   gap: 15px;
-
-  grid-template-areas:
-    "header header header header",
-    "aside main main main",
-    "aside main main main",
-    "aside main main main"
-    "footer footer footer footer"
+  
 }
 
 .contenedor--subelemento1-1,
@@ -39,11 +35,11 @@
 }
 
 .contenedor--subelemento1-1 {
-  grid-area: "header";
+  
 }
 
 .contenedor--subelemento1-2 {
-  grid-row: 2/4;
+
 
 }
 
@@ -55,10 +51,7 @@
 
 .contenedor--subelemento2-2 {
 
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 1rem;
+
 }
 
 .contenedor--subelemento2-2 > p {
