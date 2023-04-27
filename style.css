@@ -5,80 +5,23 @@
   font-size: 2rem;
   font-weight: bold;
 }
-
-.contenedor {
+.contenedor-grid {
   display: grid;
-  grid-template-columns: 1fr clamp(200px, 50%, 300px) 1fr;
-  grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
-  gap: 15px;
-  
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
-.contenedor--subelemento1-1,
-.contenedor--subelemento1-2,
-.contenedor--subelemento1-3,
-.contenedor--subelemento1-4 {
-  border: 3px solid coral;
-  background-color: aqua;
-  border-radius: 25px;
-  box-shadow: -7px -9px 19px 0px rgba(0, 0, 0, 0.3);
+.elemento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid black;
 }
 
-.contenedor--subelemento2-1,
-.contenedor--subelemento2-2,
-.contenedor--subelemento2-3,
-.contenedor--subelemento2-4 {
-  border: 3px solid rgb(234, 255, 78);
-  background-color: brown;
-  border-radius: 25px;
-  box-shadow: -7px -9px 19px 0px rgba(0, 0, 0, 0.3);
+.elemento > div {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
 }
-
-.contenedor--subelemento1-1 {
-  
-}
-
-.contenedor--subelemento1-2 {
-
-
-}
-
-.contenedor--subelemento1-3 {}
-
-.contenedor--subelemento1-4 {}
-
-.contenedor--subelemento2-1 {}
-
-.contenedor--subelemento2-2 {
-
-
-}
-
-.contenedor--subelemento2-2 > p {
-  font-size: 12px;
-  color: white;
-}
-
-.contenedor--subelemento2-3 {}
-
-.contenedor--subelemento2-4 {}
-
-/* 
-
-
-
-.contenedor--subelemento3 {
-  border: 3px solid rgb(0, 152, 41);
-  background-color: aquamarine;
-  border-radius: 25px;
-  box-shadow: -7px -9px 19px 0px rgba(0, 0, 0, 0.3);
-}
-
-.contenedor--subelemento4 {
-  border: 3px solid rgb(0, 146, 231);
-  background-color: chartreuse;
-  border-radius: 25px;
-  box-shadow: -7px -9px 19px 0px rgba(0, 0, 0, 0.3);
-}
-
-} */
